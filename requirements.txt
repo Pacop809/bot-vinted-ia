@@ -5,4 +5,4 @@ ftfy
 regex
 tqdm
 Pillow
-git+https://github.com/openai/CLIP.git
+clip-by-openai @ https://github.com/openai/CLIP/archive/refs/tags/v1.0.tar.gz
