@@ -6,3 +6,4 @@ regex
 tqdm
 Pillow
 clip
+--no-cache-dir
