@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import os
 
 app = Flask(__name__)
 
@@ -11,6 +12,5 @@ def predict():
     return jsonify({"match": "model1", "scores": {"model1": 0.95}})
 
 if __name__ == '__main__':
-import os
-port = int(os.environ.get("PORT", 8080))
-app.run(host="0.0.0.0", port=port)
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
